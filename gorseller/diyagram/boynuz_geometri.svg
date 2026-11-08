@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 400" width="980" height="400" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,1 L9,5 L0,9 z" fill="#475569"/>
+    </marker>
+    <style>
+      .ttl { font-size: 16px; font-weight: 700; fill: #0f172a; }
+      .lb  { font-size: 15px; font-style: italic; fill: #1e3a8a; font-weight: 600; }
+      .s   { font-size: 12px; fill: #64748b; }
+      .body { fill: #e0e7ff; stroke: #3730a3; stroke-width: 2; }
+      .wg  { fill: #c7d2fe; stroke: #3730a3; stroke-width: 2; }
+      .dim { stroke: #475569; stroke-width: 1.2; fill: none; }
+      .dash { stroke: #94a3b8; stroke-width: 1.2; stroke-dasharray: 5 4; fill: none; }
+    </style>
+  </defs>
+  <rect width="980" height="400" fill="#ffffff"/>
+
+  <!-- ============ E düzlemi (yan görünüş) ============ -->
+  <text x="235" y="34" text-anchor="middle" class="ttl">E düzlemi kesiti (yan görünüş)</text>
+  <!-- waveguide -->
+  <rect x="40" y="170" width="110" height="60" class="wg"/>
+  <!-- flare -->
+  <path d="M150,170 L380,95 L380,305 L150,230 Z" class="body"/>
+  <!-- virtual apex lines -->
+  <path d="M58,200 L150,170" class="dash"/>
+  <path d="M58,200 L150,230" class="dash"/>
+  <path d="M58,200 L380,200" class="dash"/>
+  <circle cx="58" cy="200" r="3" fill="#475569"/>
+  <!-- b -->
+  <path d="M28,172 L28,228" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="14" y="205" class="lb" text-anchor="middle">b</text>
+  <!-- b1 -->
+  <path d="M405,97 L405,303" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="420" y="205" class="lb">b₁</text>
+  <!-- rho_e -->
+  <path d="M54,188 L373,84" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="205" y="125" class="lb">ρₑ</text>
+  <!-- p_e -->
+  <path d="M152,335 L378,335" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <path d="M150,232 L150,345 M380,307 L380,345" class="dash"/>
+  <text x="265" y="358" class="lb" text-anchor="middle">pₑ</text>
+  <text x="95" y="260" class="s" text-anchor="middle">dalga kılavuzu</text>
+
+  <!-- ============ H düzlemi (üst görünüş) ============ -->
+  <text x="735" y="34" text-anchor="middle" class="ttl">H düzlemi kesiti (üst görünüş)</text>
+  <rect x="530" y="155" width="110" height="90" class="wg"/>
+  <path d="M640,155 L850,70 L850,330 L640,245 Z" class="body"/>
+  <path d="M529,200 L640,155" class="dash"/>
+  <path d="M529,200 L640,245" class="dash"/>
+  <path d="M529,200 L850,200" class="dash"/>
+  <circle cx="529" cy="200" r="3" fill="#475569"/>
+  <!-- a -->
+  <path d="M505,157 L505,243" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="492" y="205" class="lb" text-anchor="middle">a</text>
+  <!-- a1 -->
+  <path d="M875,72 L875,328" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="890" y="205" class="lb">a₁</text>
+  <!-- rho_h -->
+  <path d="M525,188 L843,59" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="680" y="112" class="lb">ρₕ</text>
+  <!-- p_h -->
+  <path d="M642,365 L848,365" class="dim" marker-start="url(#a)" marker-end="url(#a)"/>
+  <path d="M640,247 L640,375 M850,332 L850,375" class="dash"/>
+  <text x="745" y="388" class="lb" text-anchor="middle">pₕ</text>
+  <text x="585" y="270" class="s" text-anchor="middle">dalga kılavuzu</text>
+  <text x="490" y="392" class="s" text-anchor="middle">● boynuz kenarlarının uzantısının kesiştiği sanal tepe noktası</text>
+</svg>
